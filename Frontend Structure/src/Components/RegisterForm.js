@@ -102,7 +102,7 @@ function RegisterForm() {
               />
               <button
                 type="submit"
-                className="form-button bg-blue-600"
+                className="form-button bg-sky-500"
                 disabled={loading}
               >
                 Register

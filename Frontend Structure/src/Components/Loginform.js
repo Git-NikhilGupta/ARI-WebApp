@@ -91,7 +91,7 @@ function LoginForm() {
               </p>
               <button
                 type="submit"
-                className="form-button bg-blue-600"
+                className="form-button bg-sky-500"
                 disabled={loading}
               >
                 Login
@@ -105,6 +105,16 @@ function LoginForm() {
               </Link>
             </p>
           </div>
+        </div>
+      </div>
+      <div className="nautical-elements">
+        <div className="bubbles">
+          <div className="bubble bubble-1"></div>
+          <div className="bubble bubble-2"></div>
+          <div className="bubble bubble-3"></div>
+          <div className="bubble bubble-4"></div>
+          <div className="bubble bubble-5"></div>
+          <div className="bubble bubble-6"></div>
         </div>
       </div>
     </div>
