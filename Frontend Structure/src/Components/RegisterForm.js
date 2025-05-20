@@ -1,6 +1,8 @@
+import "./Loginform.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Loginform.css";
+import SubmarineImage from "../Graphics/submarine.png";
+import AnchorIcon from "../Graphics/anchor.png";
 
 function RegisterForm() {
   const [name, setName] = useState("");
@@ -117,6 +119,37 @@ function RegisterForm() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="bubble-container">
+        {[...Array(25)].map((_, i) => {
+          const size = 5 + Math.random() * 10;
+          return (
+            <div
+              key={i}
+              className="bubble"
+              style={{
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 1}s`,
+                animationDuration: `${5 + Math.random() * 5}s`,
+                width: `${size}px`,
+                height: `${size}px`,
+              }}
+            />
+          );
+        })}
+      </div>
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-12 h-12 opacity-70">
+        <img
+          src={AnchorIcon}
+          alt="Anchor"
+          className="w-full h-full animate-bounce-slow"
+        />
+      </div>
+      <div className="submarine-container">
+        <img src={SubmarineImage} alt="Submarine" className="submarine-image" />
+      </div>
+      <div className="submarine-container-reverse">
+        <img src={SubmarineImage} alt="Submarine" className="submarine-image" />
       </div>
     </div>
   );

@@ -10,7 +10,7 @@
   background: linear-gradient(180deg, #11748f 0%, #1e3a8a 100%);
   overflow: hidden;
 }
-
+ 
 .panel-top {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -20,7 +20,7 @@
   gap: 4rem;
   width: 75%;
 }
-
+ 
 .left-panel {
   color: #7dd3fc;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -33,7 +33,7 @@
   position: relative;
   max-width: 600px;
 }
-
+ 
 .panel-background {
   position: absolute;
   top: 0;
@@ -45,20 +45,20 @@
   z-index: -1;
   opacity: 0.7;
 }
-
+ 
 .logo-container {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 2rem;
 }
-
+ 
 .logo-icon {
   width: 56px;
   height: 56px;
   filter: drop-shadow(0 0 10px rgba(125, 211, 252, 0.7));
   animation: rotateGlow 8s linear infinite;
 }
-
+ 
 .company-name {
   font-size: 3.2rem;
   font-weight: 800;
@@ -69,7 +69,7 @@
   animation: bounceIn 0.6s ease forwards;
   animation-delay: 0.2s;
 }
-
+ 
 .tagline-subtitle {
   font-size: 1.15rem;
   font-weight: 500;
@@ -81,14 +81,14 @@
   animation: bounceIn 0.6s ease forwards;
   animation-delay: 0.4s;
 }
-
+ 
 .tagline {
   color: #e2e8f0;
   font-size: 1.15rem;
   line-height: 2;
   max-width: 460px;
 }
-
+ 
 .tagline-item {
   margin-bottom: 1.2rem;
   opacity: 0;
@@ -96,16 +96,16 @@
   animation: bounceIn 0.6s ease forwards;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
-
+ 
 .tagline-item:hover {
   color: #7dd3fc;
   transform: translateX(3px);
 }
-
+ 
 .tagline-item:nth-child(1) { animation-delay: 0.6s; }
 .tagline-item:nth-child(2) { animation-delay: 0.8s; }
 .tagline-item:nth-child(3) { animation-delay: 1.0s; }
-
+ 
 .panel-divider {
   width: 80px;
   height: 3px;
@@ -116,14 +116,14 @@
   animation: fadeIn 1s ease forwards;
   animation-delay: 1.2s;
 }
-
+ 
 .right-panel {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+ 
 .ring {
   position: absolute;
   border: 3px solid rgba(125, 211, 252, 0.7);
@@ -135,7 +135,7 @@
   pointer-events: none;
   z-index: 0;
 }
-
+ 
 .ring.large {
   width: 320px;
   height: 320px;
@@ -143,7 +143,7 @@
   left: 10%;
   animation-delay: 0s;
 }
-
+ 
 .ring.medium {
   width: 220px;
   height: 220px;
@@ -153,7 +153,7 @@
   filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.8));
   animation-delay: 1s;
 }
-
+ 
 .ring.small {
   width: 150px;
   height: 150px;
@@ -163,7 +163,7 @@
   filter: drop-shadow(0 0 8px rgba(6, 182, 212, 0.8));
   animation-delay: 2s;
 }
-
+ 
 @keyframes floatRing {
   0% {
     transform: translateY(0) translateX(0);
@@ -172,7 +172,7 @@
     transform: translateY(-25px) translateX(25px);
   }
 }
-
+ 
 @keyframes bounceIn {
   0% {
     opacity: 0;
@@ -183,12 +183,12 @@
     transform: scale(1) translateY(0);
   }
 }
-
+ 
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-
+ 
 .form-card {
   z-index: 1;
   width: 100%;
@@ -202,16 +202,16 @@
   transition: border 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
   position: relative;
 }
-
+ 
 .form-card:hover {
   transform: translateY(-5px);
 }
-
+ 
 .form-card:focus-within {
   border: 1px solid rgba(125, 211, 252, 0.7);
   box-shadow: 0 0 15px rgba(125, 211, 252, 0.5);
 }
-
+ 
 .form-accent {
   position: absolute;
   top: 0;
@@ -222,7 +222,7 @@
   background: linear-gradient(to right, #7dd3fc, #2dd4bf);
   border-radius: 0 0 4px 4px;
 }
-
+ 
 .form-title {
   font-size: 2.5rem;
   font-weight: 800;
@@ -233,31 +233,31 @@
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-
+ 
 .form-body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-
+ 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   transition: transform 0.3s ease;
 }
-
+ 
 .form-group:hover {
   transform: translateY(-2px);
 }
-
+ 
 .form-label {
   font-size: 0.95rem;
   color: #e2e8f0;
   font-weight: 500;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
-
+ 
 .form-input {
   padding: 1rem 1.5rem;
   border-radius: 0.75rem;
@@ -270,13 +270,13 @@
   color: #f8fafc;
   animation: fadeIn 0.6s ease forwards;
 }
-
+ 
 .form-input:focus {
   border-color: #7dd3fc;
   transform: scale(1.02);
   box-shadow: 0 4px 15px rgba(125, 211, 252, 0.3);
 }
-
+ 
 .form-button {
   border: none;
   cursor: pointer;
@@ -290,53 +290,53 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
-
+ 
 .form-button:hover {
   background-color: #06b6d4;
 }
-
+ 
 .form-button:active {
   transform: scale(0.98);
   background-color: #0284c7;
 }
-
+ 
 .password-footer {
   margin-top: -1.2rem;
   text-align: center;
   font-size: 1rem;
 }
-
+ 
 .password-link {
   color: #2dd4bf;
   text-decoration: none;
   font-weight: 400;
   transition: color 0.1s ease;
 }
-
+ 
 .password-link:hover {
   color: #06b6d4;
   text-decoration: underline;
 }
-
+ 
 .form-footer {
   margin-top: 2rem;
   text-align: center;
   font-size: 1rem;
   color: #d1d5db;
 }
-
+ 
 .form-link {
   color: #2dd4bf;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.1s ease;
 }
-
+ 
 .form-link:hover {
   color: #06b6d4;
   text-decoration: underline;
 }
-
+ 
 .form-message {
   margin-top: 1.5rem;
   text-align: center;
@@ -344,11 +344,11 @@
   font-size: 1rem;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
-
+ 
 .animate-slide-up {
   animation: slideUp 0.7s ease forwards;
 }
-
+ 
 @keyframes slideUp {
   from {
     transform: translateY(60px);
@@ -359,7 +359,7 @@
     opacity: 1;
   }
 }
-
+ 
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -370,7 +370,7 @@
     transform: translateY(0);
   }
 }
-
+ 
 @keyframes bounceIn {
   0% {
     opacity: 0;
@@ -385,7 +385,7 @@
     transform: translateY(0);
   }
 }
-
+ 
 @keyframes rotateGlow {
   0% {
     transform: rotate(0deg);
@@ -396,207 +396,224 @@
     filter: drop-shadow(0 0 14px rgba(125, 211, 252, 0.9));
   }
 }
-
+ 
 @media (max-width: 1024px) {
   .panel-top {
     grid-template-columns: 1fr;
     padding: 2rem;
     width: 90%;
   }
-
+ 
   .left-panel {
     padding-left: 2rem;
     align-items: center;
     text-align: center;
   }
-
+ 
   .right-panel {
     margin-top: 2rem;
   }
 }
-
+ 
 @media (max-width: 768px) {
   .panel-top {
     grid-template-columns: 1fr;
     width: 100%;
     padding: 2rem;
   }
-
+ 
   .left-panel {
     padding-left: 1rem;
     padding-right: 1rem;
     max-width: 100%;
   }
-
+ 
   .company-name {
     font-size: 2rem;
   }
-
+ 
   .tagline {
     font-size: 1rem;
     max-width: 100%;
   }
-
+ 
   .tagline-subtitle {
     font-size: 1rem;
   }
-
+ 
   .logo-icon {
     width: 40px;
     height: 40px;
   }
-
+ 
   .panel-divider {
     width: 60px;
   }
 }
-
+ 
 @media (max-width: 640px) {
   .form-container {
     padding: 1rem;
   }
-
+ 
   .form-card {
     padding: 2rem;
     max-width: 100%;
   }
-
+ 
   .ring.large {
     width: 240px;
     height: 240px;
   }
-
+ 
   .ring.medium {
     width: 180px;
     height: 180px;
   }
-
+ 
   .ring.small {
     width: 120px;
     height: 120px;
   }
-
+ 
   .company-name {
     font-size: 1.8rem;
   }
-
+ 
   .tagline {
     font-size: 0.95rem;
   }
-
+ 
   .tagline-subtitle {
     font-size: 0.95rem;
   }
 }
-
+ 
 @media (max-width: 480px) {
   .company-name {
     font-size: 1.6rem;
   }
-
+ 
   .tagline {
     font-size: 0.9rem;
   }
-
+ 
   .tagline-subtitle {
     font-size: 0.9rem;
   }
-
+ 
   .logo-icon {
     width: 32px;
     height: 32px;
   }
 }
-
-.nautical-elements {
+ 
+.bubble-container {
   position: absolute;
+  bottom: 0;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
 }
-
-.bubbles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
+ 
 .bubble {
   position: absolute;
-  bottom: -10px;
+  bottom: -50px;
   width: 10px;
   height: 10px;
-  background: rgba(125, 211, 252, 0.4);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  filter: blur(1px);
+  animation: rise 8s infinite ease-in;
+  opacity: 0.6;
 }
-
-.bubble-1 {
-  left: 15%;
-  width: 12px;
-  height: 12px;
-  bottom: 0%;
-  animation: bubbleRise 8s linear infinite;
-}
-
-.bubble-2 {
-  left: 35%;
-  width: 8px;
-  height: 8px;
-  bottom: 10%;
-  animation: bubbleRise 10s linear infinite 2s;
-}
-
-.bubble-3 {
-  right: 25%;
-  width: 15px;
-  height: 15px;
-  bottom: 5%;
-  animation: bubbleRise 9s linear infinite 1s;
-}
-
-.bubble-4 {
-  left: 45%;
-  width: 10px;
-  height: 10px;
-  bottom: 15%;
-  animation: bubbleRise 7s linear infinite 0.5s;
-}
-
-.bubble-5 {
-  right: 15%;
-  width: 14px;
-  height: 14px;
-  bottom: 8%;
-  animation: bubbleRise 11s linear infinite 3s;
-}
-
-.bubble-6 {
-  left: 60%;
-  width: 9px;
-  height: 9px;
-  bottom: 12%;
-  animation: bubbleRise 8.5s linear infinite 1.5s;
-}
-
-
-@keyframes bubbleRise {
+ 
+@keyframes rise {
   0% {
-    transform: translateY(-10px) scale(0.8);
-    opacity: 0;
-  }
-  10% {
+    transform: translateY(0) scale(1);
     opacity: 0.6;
   }
-  70% {
-    opacity: 0.4;
-  }
+ 
   100% {
-    transform: translateY(-100vh) scale(1.2);
+    transform: translateY(-100vh) scale(0.5);
     opacity: 0;
+  }
+}
+ 
+@keyframes bounce-slow {
+ 
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+ 
+  50% {
+    transform: translateY(-15px);
+  }
+}
+ 
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}
+ 
+.submarine-container {
+  position: absolute;
+  bottom: 80px;
+  left: -15px;
+  width: 56px;
+  height: 56px;
+  opacity: 0.7;
+  animation: float-and-flip 120s linear infinite;
+}
+ 
+.submarine-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+ 
+.submarine-container-reverse{
+  position: absolute;
+  bottom: 120px;
+  left: -15px;
+  width: 56px;
+  height: 56px;
+  opacity: 0.7;
+  animation: float-and-flip-reverse 110s linear infinite;
+}
+ 
+@keyframes float-and-flip {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+ 
+  50% {
+    transform: translateX(105vw) scaleX(1);
+  }
+ 
+  50.1% {
+    transform: translateX(105vw) scaleX(-1);
+  }
+ 
+  100% {
+    transform: translateX(0) scaleX(-1);
+  }
+}
+ 
+@keyframes float-and-flip-reverse {
+  0% {
+    transform: translateX(105vw) scaleX(-1);
+  }
+ 
+  50% {
+    transform: translateX(-10vw) scaleX(-1);
+  }
+ 
+  50.1% {
+    transform: translateX(-10vw) scaleX(1);
+  }
+ 
+  100% {
+    transform: translateX(105vw) scaleX(1);
   }
 }
